@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="EN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countdown</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./CSS/style.css">
+  <script src="scripts/index.js" defer></script>
+  <script src="scripts/modal.js" defer></script>
+</head>
+
+<body>
+  <img id="top-background" src="./assets/top-image.svg" alt="background image">
+  <img id="bottom-background" src="assets/bottom-image.svg" alt="background image">
+
+  <main>
+    <div id="text-section">
+      <h1>Ready to launch in...</h1>
+
+      <div id="countdown-timer">
+        <div class="counter">
+          <h3>Days</h3>
+          <p id="days"></p>
+        </div>
+        <div class="divisor">:</div>
+        <div class="counter">
+          <h3>Hours</h3>
+          <p id="hours"></p>
+        </div>
+        <div class="divisor">:</div>
+        <div class="counter">
+          <h3>Minutes</h3>
+          <p id="minutes"></p>
+        </div>
+        <div class="divisor">:</div>
+        <div class="counter">
+          <h3>Seconds</h3>
+          <p id="seconds"></p>
+        </div>
+      </div>
+
+      <p id="know-more">Subscribe to be notified when it comes out!</p>
+
+      <button id="subscribe-button">Subscribe</button>
+    </div>
+
+    <img src="assets/rocket.svg" alt="Rocket image">
+  </main>
+
+  <div id="subscribe-modal">
+    <form action="" method="post">
+      <label>
+        <span>Name</span>
+        <input name="name" type="text">
+      </label>
+
+      <label>
+        <span>Email</span>
+        <input name="email" type="email" required>
+      </label>
+
+      <div id="form-buttons">
+        <button id="cancel-button">Cancel</button>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+
+</html>
