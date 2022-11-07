@@ -34,9 +34,11 @@ html {
 }
 
 main {
-  width: 80vw;
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
   position: absolute;
   top: 50%;
@@ -45,7 +47,6 @@ main {
 }
 
 #text-section {
-  width: 100%;
   text-align: center;
 }
 h1 {
@@ -173,4 +174,45 @@ input {
   background-color: transparent;
   width: initial;
   height: initial;
+}
+
+/*
+=========== MEDIA QUERIES ================
+*/
+
+@media only screen and (max-width: 1160px) {
+  main {
+    flex-direction: column;
+    gap: 50px
+  }
+  #rocket-img {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    width: initial;
+    height: initial;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 6vw;
+  }
+  #countdown-timer {
+    transform: scale(85%);
+  }
+
+  #rocket-img {
+    display: block;
+    width: 80vw;
+    margin: 50px auto;
+  }
 }
